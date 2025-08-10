@@ -1,6 +1,6 @@
-# Welcome to MenicusLyS's blog
+# Welcome to RICHELLysS's blog
 
-欢迎来到MeniscusLyS的博客
+欢迎来到RICEHLLysS的博客
 
 There are only articles like plain boiled water. 
 
