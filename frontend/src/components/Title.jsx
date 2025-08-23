@@ -14,10 +14,10 @@ const Title = () => (
     {/* Content - Always centered */}
     <div className="relative z-10 text-center px-4">
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-        MeniscusLyS's Blog
+        RICHELLysS's Blog
       </h1>
       <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
-        What you are you do not see, what you see is your shadow.
+        My techinical diary and learning road.
       </p>
     </div>
   </section>
