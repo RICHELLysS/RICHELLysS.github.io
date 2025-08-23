@@ -1,11 +1,9 @@
-import React from 'react';
-
 const Footer = () => (
-  <footer className="bg-gray-50 border-t border-gray-200">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <footer className="w-full bg-gray-50 border-t border-gray-200">
+    <div className="w-full px-4 sm:px-6 lg:px-12 py-8">
       <div className="flex flex-col items-center space-y-4">
         <a 
-          href="https://github.com/RICHELLysS" 
+          href="https://github.com/RICHELLysS/RICHELLysS.github.io" 
           className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
           target="_blank"
           rel="noopener noreferrer"
@@ -15,7 +13,8 @@ const Footer = () => (
           </svg>
         </a>
         <div className="text-sm text-gray-500 text-center">
-          <p>&copy; 2025 Your Name. All rights reserved.</p>
+          <p>Copyright © MeniscusLyS's Blog 2021</p>
+          <p>Theme on <a href="https://github.com/RICHELLysS/RICHELLysS.github.io" className="text-blue-600 hover:text-blue-800">GitHub</a></p>
         </div>
       </div>
     </div>
