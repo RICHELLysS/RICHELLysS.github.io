@@ -42,7 +42,7 @@ const Title = ({ title, subtitle }) => {
 
   return (
     <section 
-      className="w-full min-h-[60vh] flex items-center justify-center relative transition-all duration-1000"
+      className="w-full min-h-[60vh] flex items-center justify-center relative"
       style={{
         backgroundImage: `url(${currentImage})`,
         backgroundSize: 'cover',
