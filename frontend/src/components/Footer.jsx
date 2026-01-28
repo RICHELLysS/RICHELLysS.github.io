@@ -1,11 +1,20 @@
-const Footer = () => (
-  <footer className="w-full bg-gray-50 border-t border-gray-200">
+import { useTheme } from '../context/ThemeContext';
+
+const Footer = () => {
+  const { isDarkMode } = useTheme();
+  
+  return (
+  <footer className={`w-full border-t ${
+    isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-gray-50 border-gray-200'
+  }`}>
     <div className="w-full px-4 sm:px-6 lg:px-12 py-8">
       <div className="flex flex-col items-center space-y-4">
         <div className="flex items-center space-x-6">
           <a 
             href="https://github.com/RICHELLysS/RICHELLysS.github.io" 
-            className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+            className={`transition-colors duration-200 ${
+              isDarkMode ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-gray-900'
+            }`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -17,7 +26,9 @@ const Footer = () => (
           
           <a 
             href="https://linkedin.com" 
-            className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+            className={`transition-colors duration-200 ${
+              isDarkMode ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-gray-900'
+            }`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -29,7 +40,9 @@ const Footer = () => (
           
           <a 
             href="https://twitter.com" 
-            className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+            className={`transition-colors duration-200 ${
+              isDarkMode ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-gray-900'
+            }`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
@@ -41,7 +54,9 @@ const Footer = () => (
           
           <a 
             href="mailto:contact@example.com" 
-            className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+            className={`transition-colors duration-200 ${
+              isDarkMode ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-gray-900'
+            }`}
             aria-label="Email"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,13 +65,16 @@ const Footer = () => (
           </a>
         </div>
         
-        <div className="text-sm text-gray-500 text-center">
+        <div className={`text-sm text-center ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
           <p>Copyright © MeniscusLyS's Blog 2021</p>
-          <p>Theme on <a href="https://github.com/RICHELLysS/RICHELLysS.github.io" className="text-blue-600 hover:text-blue-800">GitHub</a></p>
+          <p>Theme on <a href="https://github.com/RICHELLysS/RICHELLysS.github.io" className={`hover:text-blue-800 ${
+            isDarkMode ? 'text-blue-400' : 'text-blue-600'
+          }`}>GitHub</a></p>
         </div>
       </div>
     </div>
   </footer>
-);
+  );
+};
 
 export default Footer;

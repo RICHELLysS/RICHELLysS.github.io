@@ -1,12 +1,18 @@
-import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Title from '../components/Title';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const About = () => {
   const { t } = useLanguage();
+  const { isDarkMode } = useTheme();
+  const [interestRef, interestVisible] = useScrollAnimation();
+  const [languageRef, languageVisible] = useScrollAnimation();
 
   const content = {
     title: { en: "About Me", zh: "关于我" },
+    subtitle: { en: "Get to know me better", zh: "更好地了解我" },
     interestTitle: { en: "Interests", zh: "兴趣爱好" },
     interestContent: {
       en: "I am passionate about technology, design, and innovation. In my free time, I enjoy exploring new programming languages, contributing to open-source projects, and staying up-to-date with the latest trends in web development. I also have a keen interest in UI/UX design and believe that great user experiences are the key to successful products.",
@@ -20,32 +26,35 @@ const About = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-1 pt-20">
-        <div className="w-full bg-gradient-to-br from-purple-50 to-blue-50 py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              {t(content.title)}
-            </h1>
-          </div>
-        </div>
+    <div className={`flex flex-col min-h-screen ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+      <main className={`flex-1 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+        <Title title={content.title} subtitle={content.subtitle} />
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+        <div className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+          <section 
+            ref={interestRef}
+            className={`mb-12 transition-all duration-1000 ${
+              interestVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
+            <h2 className={`text-3xl font-bold mb-6 text-left ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
               {t(content.interestTitle)}
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className={`prose prose-lg max-w-none text-left ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               <p>{t(content.interestContent)}</p>
             </div>
           </section>
 
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section 
+            ref={languageRef}
+            className={`transition-all duration-1000 ${
+              languageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
+            <h2 className={`text-3xl font-bold mb-6 text-left ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
               {t(content.languageTitle)}
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className={`prose prose-lg max-w-none text-left ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               <p>{t(content.languageContent)}</p>
             </div>
           </section>

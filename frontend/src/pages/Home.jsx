@@ -1,12 +1,18 @@
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Title from '../components/Title';
 import ProjectCarousel from '../components/ProjectCarousel';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 import { projects } from '../data/projects';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Home = () => {
   const { t } = useLanguage();
+  const { isDarkMode } = useTheme();
+  const [personalRef, personalVisible] = useScrollAnimation();
+  const [educationRef, educationVisible] = useScrollAnimation();
+  const [academicRef, academicVisible] = useScrollAnimation();
+  const [projectsRef, projectsVisible] = useScrollAnimation();
 
   const content = {
     personalTitle: { en: "Personal Summary", zh: "个人简介" },
@@ -28,42 +34,61 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-1 pt-16">
+    <div className={`flex flex-col min-h-screen ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+      <main className="flex-1">
         <Title />
         
-        <div className="w-full bg-white">
+        <div className={`w-full ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <section 
+              ref={personalRef}
+              className={`mb-16 transition-all duration-1000 ${
+                personalVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <h2 className={`text-3xl font-bold mb-6 text-left ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 {t(content.personalTitle)}
               </h2>
-              <div className="prose prose-lg max-w-none text-gray-700">
+              <div className={`prose prose-lg max-w-none text-left ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 <p>{t(content.personalContent)}</p>
               </div>
             </section>
 
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <section 
+              ref={educationRef}
+              className={`mb-16 transition-all duration-1000 ${
+                educationVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <h2 className={`text-3xl font-bold mb-6 text-left ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 {t(content.educationTitle)}
               </h2>
-              <div className="prose prose-lg max-w-none text-gray-700 whitespace-pre-line">
+              <div className={`prose prose-lg max-w-none whitespace-pre-line text-left ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 <p>{t(content.educationContent)}</p>
               </div>
             </section>
 
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <section 
+              ref={academicRef}
+              className={`mb-16 transition-all duration-1000 ${
+                academicVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <h2 className={`text-3xl font-bold mb-6 text-left ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 {t(content.academicTitle)}
               </h2>
-              <div className="prose prose-lg max-w-none text-gray-700">
+              <div className={`prose prose-lg max-w-none text-left ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 <p>{t(content.academicContent)}</p>
               </div>
             </section>
 
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            <section 
+              ref={projectsRef}
+              className={`mb-16 transition-all duration-1000 ${
+                projectsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <h2 className={`text-3xl font-bold mb-8 text-left ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 {t(content.projectsTitle)}
               </h2>
               <ProjectCarousel projects={projects} />

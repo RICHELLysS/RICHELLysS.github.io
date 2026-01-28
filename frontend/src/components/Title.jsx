@@ -1,35 +1,67 @@
+import { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { backgroundImages, shuffleImages } from '../utils/backgroundImages';
+import Header from './Header';
 
-const Title = () => {
+const Title = ({ title, subtitle }) => {
   const { t } = useLanguage();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [shuffledImages, setShuffledImages] = useState([]);
 
-  const content = {
-    title: { en: "RICHELLysS's Portfolio", zh: "RICHELLysS的作品集" },
+  const defaultContent = {
+    title: { en: "Yuqing Jiang's Portfolio", zh: "Yuqing Jiang的作品集" },
     subtitle: { 
       en: "My technical diary and learning road.", 
       zh: "我的技术日记和学习之路。" 
     }
   };
 
+  const displayTitle = title || defaultContent.title;
+  const displaySubtitle = subtitle || defaultContent.subtitle;
+
+  useEffect(() => {
+    setShuffledImages(shuffleImages(backgroundImages));
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => {
+        const nextIndex = prevIndex + 1;
+        if (nextIndex >= shuffledImages.length) {
+          setShuffledImages(shuffleImages(backgroundImages));
+          return 0;
+        }
+        return nextIndex;
+      });
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, [shuffledImages.length]);
+
+  const currentImage = shuffledImages[currentImageIndex] || backgroundImages[0];
+
   return (
     <section 
-      className="w-full min-h-[60vh] flex items-center justify-center relative pt-16"
+      className="w-full min-h-[60vh] flex items-center justify-center relative transition-all duration-1000"
       style={{
-        backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><defs><linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23f3e7e9"/><stop offset="30%" stop-color="%23e3d5f7"/><stop offset="60%" stop-color="%23d0a9b5"/><stop offset="100%" stop-color="%23b8a9cc"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>')`,
+        backgroundImage: `url(${currentImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-black/20"></div>
+      <Header />
+      <div className="absolute inset-0 bg-black/30"></div>
       
       <div className="relative z-10 text-center px-4">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
-          {t(content.title)}
+          {t(displayTitle)}
         </h1>
-        <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
-          {t(content.subtitle)}
-        </p>
+        {displaySubtitle && (
+          <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
+            {t(displaySubtitle)}
+          </p>
+        )}
       </div>
     </section>
   );
