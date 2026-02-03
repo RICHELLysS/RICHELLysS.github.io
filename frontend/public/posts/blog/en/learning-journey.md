@@ -1,5 +1,7 @@
 # My Learning Journey
 
+*January 10, 2024*
+
 *Published on January 10, 2024*
 
 Reflecting on my journey through technology and design. This has been an incredible adventure filled with challenges and growth.

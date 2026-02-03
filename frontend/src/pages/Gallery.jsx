@@ -10,6 +10,7 @@ const Gallery = () => {
   const { t } = useLanguage();
   const { isDarkMode } = useTheme();
   const [galleryRef, galleryVisible] = useScrollAnimation();
+  const [selectedArtwork, setSelectedArtwork] = useState(null);
 
   const content = {
     title: { en: "Art Gallery", zh: "艺术画廊" },
@@ -65,9 +66,12 @@ const Gallery = () => {
                   animation: galleryVisible ? `fadeInUp 0.6s ease-out ${index * 0.1}s both` : 'none'
                 }}
               >
-                <div className={`rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer ${
-                  isDarkMode ? 'bg-gray-800' : 'bg-white'
-                }`}>
+                <div 
+                  className={`rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer ${
+                    isDarkMode ? 'bg-gray-800' : 'bg-white'
+                  }`}
+                  onClick={() => setSelectedArtwork(artwork)}
+                >
                   <img
                     src={artwork.src}
                     alt={artwork.title}
@@ -80,6 +84,60 @@ const Gallery = () => {
           </div>
         </div>
       </main>
+      
+      {/* Artwork Modal */}
+      {selectedArtwork && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4"
+          onClick={() => setSelectedArtwork(null)}
+        >
+          <div 
+            className={`relative max-w-4xl max-h-full overflow-auto rounded-lg ${
+              isDarkMode ? 'bg-gray-800' : 'bg-white'
+            }`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedArtwork(null)}
+              className={`absolute top-4 right-4 z-10 p-2 rounded-full transition-colors ${
+                isDarkMode 
+                  ? 'bg-gray-700 text-gray-300 hover:bg-gray-600' 
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
+              aria-label="Close artwork"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            {/* Artwork Image */}
+            <div className="p-4">
+              <img
+                src={selectedArtwork.src}
+                alt={selectedArtwork.title}
+                className="w-full h-auto max-h-[70vh] object-contain rounded-lg"
+              />
+              
+              {/* Artwork Info */}
+              <div className="mt-4 text-center">
+                <h3 className={`text-xl font-bold mb-2 ${
+                  isDarkMode ? 'text-white' : 'text-gray-900'
+                }`}>
+                  {selectedArtwork.title}
+                </h3>
+                <p className={`text-sm ${
+                  isDarkMode ? 'text-gray-400' : 'text-gray-600'
+                }`}>
+                  Created: {selectedArtwork.createdAt}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      
       <Footer />
     </div>
   );
