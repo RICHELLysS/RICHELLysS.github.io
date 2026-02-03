@@ -9,10 +9,10 @@ const Title = ({ title, subtitle }) => {
   const [shuffledImages, setShuffledImages] = useState([]);
 
   const defaultContent = {
-    title: { en: "Yuqing Jiang's Portfolio", zh: "Yuqing Jiang的作品集" },
+    title: { en: "Yuqing Jiang's Portfolio", zh: "姜雨晴的作品集" },
     subtitle: { 
-      en: "My technical diary and learning road.", 
-      zh: "我的技术日记和学习之路。" 
+      en: "My diary and learning road.", 
+      zh: "我的日记和学习之路。" 
     }
   };
 

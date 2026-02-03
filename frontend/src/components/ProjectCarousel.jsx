@@ -7,7 +7,7 @@ const ProjectCarousel = ({ projects }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { isDarkMode } = useTheme();
   
   const itemsPerPage = 3;
@@ -17,7 +17,7 @@ const ProjectCarousel = ({ projects }) => {
     setIsAnimating(false);
     const timer = setTimeout(() => setIsAnimating(true), 50);
     return () => clearTimeout(timer);
-  }, [currentIndex]);
+  }, [currentIndex, language]);
   
   const getCurrentProjects = () => {
     const start = currentIndex * itemsPerPage;
@@ -78,7 +78,9 @@ const ProjectCarousel = ({ projects }) => {
               </h3>
               <p className={`mb-4 line-clamp-3 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                 {t(project.summary)}
-                <span className="text-blue-600 ml-1">see more</span>
+                <span className="text-blue-600 ml-1">
+                  {language === 'en' ? 'see more' : '查看更多'}
+                </span>
               </p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, index) => (

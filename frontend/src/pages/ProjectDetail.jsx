@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { isDarkMode } = useTheme();
   const [markdown, setMarkdown] = useState('');
   const [loading, setLoading] = useState(true);
@@ -27,10 +27,14 @@ const ProjectDetail = () => {
 
     const fetchMarkdown = async () => {
       try {
-        const response = await fetch(`/posts/projects/${id}.md`);
+        // Fetch from language-specific folder
+        const response = await fetch(`/posts/projects/${language}/${id}.md`);
+        
         if (response.ok) {
           const text = await response.text();
           setMarkdown(text);
+        } else {
+          console.error('Markdown file not found');
         }
       } catch (error) {
         console.error('Error loading markdown:', error);
@@ -42,7 +46,7 @@ const ProjectDetail = () => {
     if (project) {
       fetchMarkdown();
     }
-  }, [id, project]);
+  }, [id, project, language]);
 
   if (!project) {
     return (

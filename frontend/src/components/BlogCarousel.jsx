@@ -7,7 +7,7 @@ const BlogCarousel = ({ posts }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { isDarkMode } = useTheme();
   
   const itemsPerPage = 4;
@@ -17,7 +17,7 @@ const BlogCarousel = ({ posts }) => {
     setIsAnimating(false);
     const timer = setTimeout(() => setIsAnimating(true), 50);
     return () => clearTimeout(timer);
-  }, [currentIndex]);
+  }, [currentIndex, language]);
   
   const getCurrentPosts = () => {
     const start = currentIndex * itemsPerPage;
@@ -83,7 +83,7 @@ const BlogCarousel = ({ posts }) => {
                 {t(post.excerpt)}
               </p>
               <span className="inline-block text-blue-600 hover:text-blue-700 font-medium text-sm">
-                Read more →
+                {language === 'en' ? 'Read more →' : '阅读更多 →'}
               </span>
             </article>
           ))}

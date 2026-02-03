@@ -8,9 +8,16 @@ const Header = () => {
   const { language, toggleLanguage } = useLanguage();
   const { isDarkMode, toggleTheme } = useTheme();
   const location = useLocation();
-  const myLogo = "Yuqing Jiang";
+  const myLogo = "LOGO";
 
   const isActive = (path) => location.pathname === path;
+
+  const navigationItems = [
+    { path: '/', label: { en: 'HOME', zh: '首页' } },
+    { path: '/gallery', label: { en: 'ART GALLERY', zh: '艺术画廊' } },
+    { path: '/blog', label: { en: 'BLOG', zh: '博客' } },
+    { path: '/about', label: { en: 'ABOUT ME', zh: '关于我' } }
+  ];
 
   return (
     <header 
@@ -18,36 +25,21 @@ const Header = () => {
     >
       {/* Desktop Header */}
       <div className="hidden md:flex w-full px-6 lg:px-12 py-4 items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 text-xl text-white hover:text-blue-300 transition-colors drop-shadow-lg">
-          {/* <img src="/vite.svg" alt="Logo" className="w-8 h-8" /> */}
+        <Link to="/" className="flex items-center gap-3 text-xl text-white drop-shadow-lg">
+          <img src="/Alien.png" alt="Logo" className="w-8 h-8" />
           {myLogo}
         </Link>
         
         <nav className="flex items-center space-x-8">
-          <Link 
-            to="/" 
-            className={`transition-colors drop-shadow-lg ${isActive('/') ? 'text-blue-300' : 'text-white hover:text-blue-300'}`}
-          >
-            HOME
-          </Link>
-          <Link 
-            to="/gallery" 
-            className={`transition-colors drop-shadow-lg ${isActive('/gallery') ? 'text-blue-300' : 'text-white hover:text-blue-300'}`}
-          >
-            ART GALLERY
-          </Link>
-          <Link 
-            to="/blog" 
-            className={`transition-colors drop-shadow-lg ${isActive('/blog') ? 'text-blue-300' : 'text-white hover:text-blue-300'}`}
-          >
-            BLOG
-          </Link>
-          <Link 
-            to="/about" 
-            className={`transition-colors drop-shadow-lg ${isActive('/about') ? 'text-blue-300' : 'text-white hover:text-blue-300'}`}
-          >
-            ABOUT ME
-          </Link>
+          {navigationItems.map((item) => (
+            <Link 
+              key={item.path}
+              to={item.path} 
+              className={`transition-colors drop-shadow-lg ${isActive(item.path) ? 'text-blue-300' : 'text-white hover:text-blue-300'}`}
+            >
+              {language === 'en' ? item.label.en : item.label.zh}
+            </Link>
+          ))}
           <button
             onClick={toggleTheme}
             className="p-2 text-white hover:text-blue-300 transition-colors drop-shadow-lg"
@@ -67,22 +59,22 @@ const Header = () => {
             onClick={toggleLanguage}
             className="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
           >
-            {language === 'en' ? 'ch' : 'EN'}
+            {language === 'en' ? '中文' : 'EN'}
           </button>
         </nav>
       </div>
 
       {/* Mobile Header */}
       <div className="md:hidden w-full px-4 py-4 flex items-center justify-between relative">
-        <Link to="/" className="flex items-center gap-2 text-lg font-bold text-gray-900">
-          <img src="/vite.svg" alt="Logo" className="w-6 h-6" />
+        <Link to="/" className="flex items-center gap-2 text-lg font-bold text-white">
+          <img src="/Alien.png" alt="Logo" className="w-6 h-6" />
           {myLogo}
         </Link>
         
         <div className="flex items-center gap-2">
           <button
             onClick={toggleTheme}
-            className="p-2 text-gray-700 hover:text-blue-600 transition-colors"
+            className="p-2 text-gray-700"
             aria-label="Toggle theme"
           >
             {isDarkMode ? (
@@ -115,34 +107,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="absolute top-full right-4 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-40">
             <nav className="pr-2">
-              <Link 
-                to="/" 
-                className={`block font-bold px-4 py-3 hover:bg-gray-50 transition-colors text-center font-medium ${isActive('/') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                HOME
-              </Link>
-              <Link 
-                to="/gallery" 
-                className={`block font-bold px-4 py-3 hover:bg-gray-50 transition-colors text-center font-medium ${isActive('/gallery') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                ART GALLERY
-              </Link>
-              <Link 
-                to="/blog" 
-                className={`block font-bold px-4 py-3 hover:bg-gray-50 transition-colors text-center font-medium ${isActive('/blog') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                BLOG
-              </Link>
-              <Link 
-                to="/about" 
-                className={`block font-bold px-4 py-3 hover:bg-gray-50 transition-colors text-center font-medium ${isActive('/about') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                ABOUT ME
-              </Link>
+              {navigationItems.map((item) => (
+                <Link 
+                  key={item.path}
+                  to={item.path} 
+                  className={`block font-bold px-4 py-3 hover:bg-gray-50 transition-colors text-center font-medium ${isActive(item.path) ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {language === 'en' ? item.label.en : item.label.zh}
+                </Link>
+              ))}
             </nav>
           </div>
         )}
