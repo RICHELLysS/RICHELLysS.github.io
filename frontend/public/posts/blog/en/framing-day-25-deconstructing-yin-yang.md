@@ -1,0 +1,31 @@
+*January 19, 2021*
+
+# Deconstructing Yin and Yang
+
+*Published on January 19, 2021*
+
+How to describe my flaws? After much thought, I sum them up in one word: "extreme."
+
+Without recognizing this, it's hard to reconcile my personality and make peace with myself.
+
+Extreme in every aspect means my state swings back and forth between two extremes: extreme excitement and extreme apathy, extreme misanthropy and extreme universal love, extreme reclusiveness and extreme enthusiasm—either one or the other, never balanced. Every moment, two voices argue in my head. Whenever I say something, the other voice refutes me, triggering anxiety, but then the other voice berates my weakness, making me calm, but then the other voice complains about my lack of drive—such cycles continue, and a day passes. I have a built-in devil's advocate in my head, even as I write this.
+
+When did this start? Probably a long time ago. My personality was too unsociable. From kindergarten, I remember being isolated. One teacher said I was "born with rebellious bones" (extremity also shows in my memory: either I remember with perfect clarity or I remember nothing). The teacher thought I was abnormal and needed special schooling. Ironically, my mother scolded the teacher back, and also scolded me. I thank her for not treating me as an autistic child, giving me self-respect and confidence.
+
+Speaking of family, I describe my parents as one the embodiment of repressed calm, the other irritable and excitable. They often hurt each other, using extremely extreme examples from life to lecture me, like two sharp knives piercing my brain—not highly damaging, but highly insulting, weakening my self-esteem and self-love.
+
+I've digressed. Where else does extremity show? In middle school, the school required short hair. During that time, my heart was filled with fear—not just fear of the unknown, but also severe OCD, anxiety in any setting, and hatred of everything. I had suicidal thoughts, but none showed on my face. Magically, when I saw scissors on the table, I suddenly became extremely calm. Within seconds, I picked up the scissors, went to the bathroom, and chopped off my own hair. It looked awful, like a dog had chewed it, yet I felt abnormally excited, as if I had become a different person. I felt that even if I had cut off my own head without hesitation, it wouldn't have surprised me.
+
+Another thing that now seems very unreasonable but did happen: once, I didn't achieve my target score in a subject, so I cut my left arm as punishment. No one forced me; I did it myself. Afterward, I thought: failing to meet the goal deserved a cut—it seemed perfectly reasonable. Looking back, it was twisted to the extreme.
+
+Another thing: public speaking. Before going on stage, I had memorized the script thoroughly and fully understood the content. But the first time I actually stood on stage, it felt like descending into hell. I had hallucinations and tinnitus. Everyone's gaze felt like a knife, and I was suffocating. Severe stress reaction hit, and in that moment, I collapsed. But the actual situation wasn't that bad—I had simply maxed out my own fear.
+
+Analyzing specifically: "I" am a person with a very small comfort zone. Almost everything outside the comfort zone is an irritation zone (more on different zones later). Anything beyond my ability to control makes me irritated inside, but this manifests as extreme calm on the outside, because I quickly kill that irritated me. For a while, I loved killing myself in my mind and giving birth to a new one. Whatever new knowledge I learned, I would bring it into how to kill myself. I used to be unwilling to face or admit this. Now that I can write it openly, perhaps I'm one step closer to reconciling with myself.
+
+Extreme internally, also extreme externally. I must admit that before writing Framing Days, my attitude toward myself and the outside was: extreme self-loathing and extreme fascination with everything, as well as extreme narcissism and extreme hatred of everything. When something exceeds my control or understanding, I become irritated and anxious, so the opposite response arises: maintaining calm and indifference. Extremely sensitive, so I package it as dull; extremely sad, so I appear indifferent. This is the brain's subconscious habit: snuffing out emotional buds, becoming cold-blooded.
+
+The culprit behind this is incorrect psychological suggestion. After reading psychology books, I pretended to understand and tried to self-suggest, formulating my own set of rules—unhealthy self-feedback with severe side effects. It was essentially altruism-masked egoism. The core method was to think about "purpose" to solve problems. For example, when anger, sadness, or anxiety arise, ask: why have these emotions? Are they useful? If not and they're just hindering, you'd better stop having them, otherwise you'll look stupid and I'll kill you. Another example: completely denying my gender and appearance. The logic: since women are often seen as weak, turn myself into an androgynous figure, so others see me first as a human, not a woman. Then if I show any sign of weakness, go die. Even more extreme: deny myself—others are definitely not wrong; the fault is mine. If things don't go as expected, it must be my problem.
+
+Looking back, it's terrifying, and I'm grateful to have survived this long. These psychological suggestions no longer apply after I constructed a relatively reasonable cognitive framework, but their inertia has greatly damaged my thinking. After dissecting this layer, I need to slowly reduce self-harm, heal psychological wounds, search for the causes of extreme thoughts in my memories, gradually harmonize to root them out, and bend my thinking closer to that of a "normal person" (defining "normal" is another question for later).
+
+Now, the "I" typing this is becoming extreme—exactly what I need to avoid. "I" need to pull away from this state of extreme rationality, relax my nerves, sleep well, and let the dark side roar in my mind before digesting it.

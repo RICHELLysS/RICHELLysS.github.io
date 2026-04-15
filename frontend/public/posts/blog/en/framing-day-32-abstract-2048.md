@@ -1,0 +1,19 @@
+*February 12, 2021*
+
+# Abstract 2048 Rule
+
+*Published on February 12, 2021*
+
+The purpose of this entry is to refine my universal learning method. Previous framing days mentioned abstract learning and dimensional induction. This entry makes these concepts more concrete, providing first-principle examples and creating an analogizable base point.
+
+Based on four-dimensional induction, I introduce the concept of Taiji. Thinking of "two yi generate four images, four images generate eight trigrams," the numbers 2,4,8 remind me of the game 2048. So I tentatively name this universal learning method the "2048 Rule," where 2, 0, 4, 8 represent different stages of learning.
+
+I'll use painting as a tool to describe this learning rule. "2" refers to opposition. Everything has opposition, forming different structures. Analogized to painting (as shown in Figure 1): first, conceive "object" and "background" in your mind—how large the object is, how much space it occupies in the background, what its general shape is. Analogized to learning, "2" is short for the "cognition of form" stage, where imagination plays a huge role.
+
+"0" means starting from zero dimension, using the newly learned term "first principles"—recognizing the essence of the appearance of things. In painting, the zero dimension is "hand."
+
+"4" is the four-dimensional induction method. Analogized to painting two hands: one dimension determines shape, two determines posture, three determines angle, four determines structure. As shown in Figures 2 and 3, this stage of painting requires referencing many materials, understanding how the hand looks at a specific angle, how perspective works, copying or tracing reference materials, then trying to draw structural lines yourself. This process analogized to programming: copy code from the internet, understand the structure, then rewrite it according to your chosen "0." "Understanding structure" is the core of "4." Once structural cognition is correct, the number of bottlenecks decreases.
+
+"8" corresponds to the coloring stage. This stage simply follows the "7+1" principle: "1" is the base color, "7" are seven colors. In the 20th framing day, I mentioned that the opposite of a color is subjective. From a color theory perspective, it's more accurate to say they are relative. A vivid example: you might think red is warm relative to blue, so you add red to a blue base to create color temperature perception. But for blue, cyan is already warm; adding red directly might create a "burned" feeling. For harmonious expression, colors should feel comfortable.
+
+"8," the stage of color perception, analogized to universal learning, is the "alienation" stage. This stage is abstract to explain because everyone sees things differently and perceives different content. So, based on everyone correctly understanding "structure," they choose different color combinations to create. "Hand" doesn't have to be flesh-colored; it depends on what color the painter wants to give it, which often relates to the painter's mental state. Some might use highly saturated colors as base when excited, high-gray colors as shadows when sad, and complementary colors for ambient light when mixed. But the key to making the image pleasing is that "8" must come after "4"—meaning coloring only needs to follow the structural lines. Even if the lighting direction and shadows are somewhat off, it still looks "good." And the public's perception of painting is often just seeking "good looks." So, given correct structure, you can experiment with different styles in the "8" stage, compare and capture commendable points. The same principle applies to design, engineering, literature, and many other fields.

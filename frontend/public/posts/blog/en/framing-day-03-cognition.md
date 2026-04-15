@@ -1,0 +1,9 @@
+*December 20, 2019*
+
+# Cognition
+
+*Published on December 20, 2019*
+
+Recently, I've become interested in cognitive science. This discipline looks like psychology and is indeed related to psychology, but without a clear boundary. It specializes in analyzing the cognitive structure of the human brain. After roughly understanding and analyzing some materials and books, without professional knowledge, I dare to offer some insights. I used to feel that everything in the world shares some commonality—whether it's the well-defined commonality, like the mutual reinforcement between sciences, or personally defined thinking channels, like from the number 1 to a magic wand, from a magic wand to ocean waves (seemingly unrelated). In the human brain, there should be a universal structure to apply. This structure is what cognitive science studies, consisting of four parts: factor, definition, relationship, and position. It can be drawn as a symbol—a hollow circle plus a solid circle with an arrow pointing in one direction. This symbol can be said to be the structure for understanding everything, at least for human cognition. For example, in learning a scientific discipline, an expression or a type of characteristic is the "factor," the "definition" describes it, can establish a "relationship" with another expression or type, and gives it a "position" in the specific field of study. This structure applies to learning in any field, corresponding to "why" (relationship), "what" (definition), "how" (factor), and "where" (position). Then you'll find the bright spot—isn't this just the Golden Circle (if you dare to add a where on the outer layer)? Amazing.
+
+T.B.C.

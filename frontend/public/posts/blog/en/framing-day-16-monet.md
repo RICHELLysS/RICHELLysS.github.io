@@ -1,0 +1,19 @@
+*July 12, 2020*
+
+# Monet
+
+*Published on July 12, 2020*
+
+I recently finished reading "Monet" (from the World Historical Figures series) and am slowly working through a collection of his paintings. I'll write some reflections. I'm an enthusiast of Impressionism. I haven't seen many masters' works, but among those I've seen, my favorite foreign painter is Claude Monet.
+
+"Painters of the classical style, handed down for centuries, believe that oil paintings must be very meticulous, even using a magnifying glass to see eyebrows and beard clearly—only then is it a good painting. Impressionist paintings, however, require viewing from a holistic perspective. If you stare at a local area, you often only see a jumble of colors."
+
+This quote summarizes Monet's painting style well. As he aged, the boundaries between colors in his paintings became less distinct, blending into something like an out-of-focus lens. Amazingly, from the whole picture, you can still tell what it is—a figure by the lake as a dark shadow, grass as a green blob. In his youth, when precision and objectivity were paramount, this style was rejected. But looking at more paintings, you realize Monet's work fits the concept of "impression"—a fleeting moment of light and shadow captured by the eyes, impossible to record all details, becoming an impression, or a familiar scene glimpsed in a dream, not fully visible but recognizable by impression. Monet captured that impression of light and shadow. In his era, cameras were becoming popular, and people preferred to paint from photos in studios, but Monet chose to go outdoors and capture light with his own eyes. The hazy beauty of his paintings speaks to the charm of Impressionism.
+
+"Art is not a pastime, but a conflict. To preserve the artist's pure conscience and win the freedom of painting language, the artist must sacrifice the fame and considerable income they could earn. Amid the collisions of tradition and innovation, a person may be crushed, but their soul soars, flying toward the radiant sun."
+
+Monet had a very distinctive personal style. I remember when I first learned oil painting, my teacher taught us to use brown as an underlayer, but Monet rejected this classical method, believing brown would ruin the beauty of light because light itself is colorful—blue at dusk, gold under the sun. Looking at realistic oil paintings from before Monet's time, they do seem grayish. Monet learned many techniques from these works but never abandoned his own understanding of light. He spent his life breaking the stubbornness of his era's painting concepts and prejudices against Impressionism, carving out his own school. It makes one sigh: new things always take time to be accepted by the public. To never copy predecessors, to paint a new path and stand alone—how can one not admire such courage and praise such spirit? The spiritual value left behind resonates with more people and is passed down.
+
+"He is neither a slave of the past, nor of the present, neither a slave of nature, nor of his neighbors. He is himself, always himself, forever himself."
+
+This is my favorite quote about Monet. The experiences of famous people may be exaggerated and romanticized by later generations, but the value of their impact on their era is real. Monet devoted his life to painting and made history. His understanding of art was unique and firm. After reading this book, I felt a burning sensation in my mind, as if washed clean, completely immersed in Monet's obsession and love for creation. Creation is truly both painful and joyful, requiring great passion to sustain. Perhaps I lack sustained passion for things, which is why I only half-finish everything. This book allowed me to pause in my confusion and feel pure love, giving me a little push forward—a small step that is, in a sense, a giant leap.

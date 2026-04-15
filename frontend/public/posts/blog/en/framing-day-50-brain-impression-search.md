@@ -1,0 +1,13 @@
+*May 1, 2021*
+
+# Brain Impression Search
+
+*Published on May 1, 2021*
+
+Sometimes this happens: while listening to a foreign language, I suddenly notice a new word and unconsciously repeat it aloud, but when I want to take notes, I can't find that word in my mind.
+
+This often happens when watching videos. For very short videos (under 10 minutes), I can drag the progress bar to quickly find the word. But for long videos like movies or lectures, after watching carefully, finding that word becomes very troublesome. Let's diverge: how does the human brain find a certain word? Usually by impression, which can be analogized to places where brainwaves produce high-amplitude fluctuations—commonly called "impressive." How are these fluctuations generated?
+
+Suppose: if a number appears near the word, it's much easier to find. Just recall whether the word was to the left or right of the number, and you can easily drag the progress bar. Without numbers, recall the color of the scene where the word appeared, then drag the progress bar looking for color changes. But for long takes in movies or academic lectures where the environment's color barely changes, you need to break down the elements of "impression." Try to recall: what was the mouth shape when reading the word? What was the pronunciation? What things did you associate with the word? What emotions arose? What changes happened in the surrounding environment? ... Like many threads converging to a single point, finally you find the word!
+
+Analogizing this process, I thought of a spider (because I recently saw one above the curtain—impressive). Various impressions can be abstracted as strands of a spiderweb, and following the strands leads to the spider. This seems inspiring for creating search algorithms, but I haven't found a specific expression. Seeking similar feelings for analogy: can a strand be abstracted as an algorithm or part of an algorithm? That's a question to think about. Continuing the analogy: for me, number search is fastest, color search is second fastest (like the spider's two front legs?). The remaining search speeds depend on the brain's metaphysics. In computers, an algorithm's search speed is represented by O(n), with types either halving or recursion. How to analogize "impression" into a computer? "Impression" is more related to human senses, analogized to the spider's web vibrations. So the question "How to put an abstract spider into a computer?" needs further exploration.

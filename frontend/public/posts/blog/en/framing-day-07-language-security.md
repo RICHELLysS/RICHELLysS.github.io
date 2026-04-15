@@ -1,0 +1,7 @@
+*January 9, 2020*
+
+# Language Security
+
+*Published on January 9, 2020*
+
+I coined a term: language security. When people talk about familiar topics, they talk endlessly and get more excited, but when it comes to unfamiliar topics, they experience epic word poverty and even want to change the subject. This is because being in a familiar topic gives a sense of security—call it the language security circle. Dopamine is linked to security, meaning the more familiar you are with a field, the less nervous you are when presenting related knowledge. The book "Your Survival Instinct Is Killing You" mentions that dopamine has a self-protective function. In nature, when a rabbit encounters a wolf, dopamine decreases, security decreases, fear arises, and the rabbit runs away—an animal instinct. The same applies to humans. When facing the unknown, security cannot be maintained at a normal level, leading to avoidance emotions. For example, the nervousness when first speaking on stage comes from dopamine changes—a biological instinct. That's why experience is more important than theory: the more experience you accumulate, the less you fear unknown situations. The same applies to language communication. For IELTS speaking, chatting in English while walking with a friend is easier than face-to-face questioning because a friend is familiar, giving more language security. When facing strangers, especially examiners, if dopamine can't adjust to normal levels quickly, you'll fail.
