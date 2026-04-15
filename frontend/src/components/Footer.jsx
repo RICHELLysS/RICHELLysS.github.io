@@ -8,7 +8,7 @@ const Footer = () => {
   const content = {
     monetNote: {
       en: "This website features paintings by Claude Monet, my favorite Impressionist painter.",
-      zh: "该网站使用了克劳德·莫奈的照片，他是我最喜欢的印象派画家。"
+      zh: "该网站使用了克劳德·莫奈的画作，他是我最喜欢的印象派画家。"
     }
   };
   
