@@ -1,184 +1,142 @@
 export const projects = [
   {
     id: 1,
-    title: { en: "Sustainable Transport Tool (UI/UX MVP)", zh: "可持续交通工具" },
+    title: { en: "Sustainable Transport Tool (UI/UX MVP)", zh: "可持续交通工具 (UI/UX MVP)" },
     summary: { 
-      en: "Led the product discovery and UI/UX design for an MVP navigation app promoting eco-friendly travel...", 
-      zh: "领导了一款推广环保出行的MVP导航应用的产品发现和UI/UX设计..." 
+      en: "Led product discovery and UI/UX design for an MVP navigation app promoting eco-friendly travel, including user research and high-fidelity prototyping in Figma.", 
+      zh: "主导了一款推广环保旅行的MVP导航应用的产品探索和UI/UX设计，包括用户调研和Figma高保真原型制作。" 
     },
-    tags: ["UI/UX", "System Design"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["UI/UX", "System Design", "Figma"],
+    date: "2024-03"
   },
   {
     id: 2,
-    title: { en: "Reddit User Behavioral Risk Prediction Model", zh: "电子商务平台" },
+    title: { en: "Reddit User Behavioral Risk Prediction Model", zh: "Reddit用户行为风险预测模型" },
     summary: { 
-      en: "Developed a full-stack e-commerce platform with payment integration and inventory management...", 
-      zh: "开发了一个具有支付集成和库存管理的全栈电子商务平台..." 
+      en: "Developed a full-stack machine learning pipeline to identify behavioral patterns from social data using NLP and XGBoost/SVM classification.", 
+      zh: "开发了一套完整的机器学习流程，利用自然语言处理 (NLP) 和 XGBoost/SVM 分类算法从社交数据中识别行为模式。" 
     },
-    tags: ["Full Stack", "React", "Node.js"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["ML", "Python", "NLP"],
+    date: "2025-01"
   },
   {
     id: 3,
-    title: { en: "Distributed Network Graph Visualization", zh: "AI聊天机器人系统" },
+    title: { en: "Distributed Network Graph Visualization", zh: "分布式网络图可视化" },
     summary: { 
-      en: "Built an intelligent chatbot using natural language processing for customer service automation...", 
-      zh: "使用自然语言处理构建智能聊天机器人以实现客户服务自动化..." 
+      en: "Collaborated with ACM-W to design and develop a web-based tool for visualizing complex network data and node relationships, focusing on interactive data representation.", 
+      zh: "与ACM-W合作，设计并开发了一款基于Web的工具，用于可视化复杂的网络数据和节点关系，专注于交互式数据展示。" 
     },
-    tags: ["AI/ML", "Python", "NLP"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["React", "Data Viz", "Next.js"],
+    date: "2024-01"
   },
   {
     id: 4,
-    title: { en: "IoT Device Control Console (ESP32 + Web)", zh: "数据可视化仪表板" },
+    title: { en: "IoT Device Control Console (ESP32 + Web)", zh: "物联网设备控制台 (ESP32 + Web)" },
     summary: { 
-      en: "Created interactive dashboards for real-time data analytics and business intelligence...", 
-      zh: "为实时数据分析和商业智能创建交互式仪表板..." 
+      en: "Built a real-time bridge between ESP32 physical devices and a web dashboard using WebSockets, ensuring low-latency bidirectional command flow.", 
+      zh: "利用 WebSocket 在 ESP32 物理设备与 Web 控制面板之间构建了实时桥梁，确保了低延迟的双向命令流。" 
     },
-    tags: ["Data Viz", "D3.js", "Analytics"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["IoT", "WebSocket", "JavaScript"],
+    date: "2024-02"
   },
   {
     id: 5,
-    title: { en: "JavaFX Desktop Application (Team Project)", zh: "移动健身应用" },
+    title: { en: "JavaFX Desktop Application (Team Project)", zh: "JavaFX桌面应用程序 (团队项目)" },
     summary: { 
-      en: "Designed and developed a cross-platform fitness tracking application with workout plans...", 
-      zh: "设计并开发了一款具有锻炼计划的跨平台健身追踪应用..." 
+      en: "Collaborated in an agile team to develop a desktop application, responsible for implementing specific frontend modules using JavaFX and performing code reviews.", 
+      zh: "在敏捷团队中协作开发桌面应用程序，负责使用 JavaFX 实现特定的前端模块并参与代码审查。" 
     },
-    tags: ["Mobile", "React Native", "Health"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["Java", "JavaFX", "Agile"],
+    date: "2023-11"
   },
   {
     id: 6,
-    title: { en: "Hackathon 1 - HR Workforce Analytics Dashboard (Tableau)", zh: "云基础设施迁移" },
+    title: { en: "Hackathon 1 - HR Workforce Analytics Dashboard (Tableau)", zh: "黑客马拉松 1 - HR人力资源分析仪表盘 (Tableau)" },
     summary: { 
-      en: "Led the migration of legacy systems to cloud infrastructure improving scalability...", 
-      zh: "领导将传统系统迁移到云基础设施以提高可扩展性..." 
+      en: "Developed an interactive HR dashboard using Tableau to visualize key workforce metrics and talent management insights during a timed hackathon.", 
+      zh: "在限时黑客马拉松期间，使用 Tableau 开发了一个交互式人力资源仪表盘，用于可视化关键的员工指标和人才管理洞察。" 
     },
-    tags: ["DevOps", "AWS", "Cloud"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["Tableau", "Data Viz", "Analytics"],
+    date: "2023-11"
   },
   {
     id: 7,
-    title: { en: "Hackathon 2 - AI Hairstyle Recommendation Web App", zh: "社交媒体分析工具" },
+    title: { en: "Hackathon 2 - AI Hairstyle Recommendation Web App", zh: "黑客马拉松 2 - AI发型推荐Web应用" },
     summary: { 
-      en: "Built a comprehensive analytics platform for tracking social media engagement metrics...", 
-      zh: "构建了一个全面的分析平台来跟踪社交媒体参与度指标..." 
+      en: "Built a privacy-focused AI web app using React and Chrome's built-in AI API for client-side image analysis and hairstyle recommendations.", 
+      zh: "使用 React 和 Chrome 内置 AI API 构建了一个注重隐私的 AI Web 应用，用于提供客户端图像分析和发型建议。" 
     },
-    tags: ["Analytics", "API Integration", "React"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["React", "AI", "Privacy"],
+    date: "2023-09"
   },
   {
     id: 8,
-    title: { en: "Hackathon 3 - Desktop Pet with Task & Gacha System", zh: "区块链投票系统" },
+    title: { en: "Hackathon 3 - Desktop Pet with Task & Gacha System", zh: "黑客马拉松 3 - 带有任务和扭蛋系统的桌面宠物" },
     summary: { 
-      en: "Developed a secure and transparent voting system using blockchain technology...", 
-      zh: "使用区块链技术开发了一个安全透明的投票系统..." 
+      en: "Created an engaging desktop pet application with a gamified task reward system and gacha mechanics for unlocking features, using AI-assisted development.", 
+      zh: "利用 AI 辅助开发创建了一款引人入胜的桌面宠物应用，包含游戏化的任务奖励系统和用于解锁功能的扭蛋机制。" 
     },
-    tags: ["Blockchain", "Security", "Web3"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["AI Tools", "Game Design", "UX"],
+    date: "2023-08"
   },
   {
     id: 9,
-    title: { en: "Independent E-commerce Store (TikTok Shop)", zh: "房地产管理系统" },
+    title: { en: "Independent E-commerce Store (TikTok Shop)", zh: "独立电商运营 (TikTok Shop)" },
     summary: { 
-      en: "Created a comprehensive property management platform with tenant and lease tracking...", 
-      zh: "创建了一个具有租户和租赁跟踪的综合物业管理平台..." 
+      en: "Launched and operated a consumer-facing apparel store on TikTok Shop, managing end-to-end operations from market research to customer service.", 
+      zh: "在 TikTok Shop 上创建并独立运营一家服装直销店，负责从市场调研到客户服务的端到端运营。" 
     },
-    tags: ["Full Stack", "Database", "CRM"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["E-commerce", "Marketing", "Operations"],
+    date: "2023-06"
   },
   {
     id: 10,
-    title: { en: "Reservoir Computing Model Implementation & Benchmarking", zh: "教育学习平台" },
+    title: { en: "Reservoir Computing Model Implementation & Benchmarking", zh: "储层计算模型实现与基准测试" },
     summary: { 
-      en: "Built an interactive online learning platform with video courses and assessments...", 
-      zh: "构建了一个具有视频课程和评估的互动在线学习平台..." 
+      en: "Implemented an efficient Recurrent Neural Network (Reservoir Computing) for time-series data processing and benchmarked it against standard tasks.", 
+      zh: "实现了一种高效的循环神经网络（储层计算），用于处理时间序列数据，并在标准基准任务上进行了测试。" 
     },
-    tags: ["EdTech", "Video Streaming", "React"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["ML", "RNN", "Python"],
+    date: "2023-05"
   },
   {
     id: 11,
-    title: { en: "Independent Game Development Learning", zh: "物联网智能家居系统" },
+    title: { en: "Independent Game Development Learning", zh: "独立游戏开发学习" },
     summary: { 
-      en: "Designed an IoT-based smart home automation system with mobile control...", 
-      zh: "设计了一个基于物联网的智能家居自动化系统，具有移动控制..." 
+      en: "Self-taught game development fundamentals using Unity and C#, creating multiple 2D platformer prototypes to understand core mechanics.", 
+      zh: "使用 Unity 和 C# 自学游戏开发基础，开发了多个 2D 横版游戏原型以理解核心机制。" 
     },
-    tags: ["IoT", "Hardware", "Mobile"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["Unity", "C#", "GameDev"],
+    date: "2023-05"
   },
   {
     id: 12,
-    title: { en: "Freelance Full-stack Developer (Vision Island Media)", zh: "餐厅订购系统" },
+    title: { en: "Freelance Full-stack Developer (Vision Island Media)", zh: "全栈自由开发 (视岛传媒)" },
     summary: { 
-      en: "Developed a digital ordering and payment system for restaurants with QR code integration...", 
-      zh: "为餐厅开发了一个具有二维码集成的数字订购和支付系统..." 
+      en: "Developed an interactive music player and lottery system for a client website using CSS3, JavaScript, and AliCloud, serving over 600 active users.", 
+      zh: "为客户网站开发了交互式音乐播放器和抽奖系统，使用 CSS3、JS 和阿里云部署，服务超过 600 名活跃用户。" 
     },
-    tags: ["Full Stack", "Payment", "QR Code"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["Full Stack", "AliCloud", "JavaScript"],
+    date: "2023-05"
   },
   {
     id: 13,
-    title: { en: "Game Jam (2nd Place Finish in 2022)", zh: "天气预报应用" },
+    title: { en: "Game Jam (2nd Place Finish in 2022)", zh: "游戏开发大赛 (2022年第二名)" },
     summary: { 
-      en: "Created a weather forecasting application with real-time data and predictive analytics...", 
-      zh: "创建了一个具有实时数据和预测分析的天气预报应用..." 
+      en: "Collaborated in a Game Jam to rapidly iterate on game concepts and mechanics under tight deadlines, finishing in second place among competitors.", 
+      zh: "在游戏开发竞赛中与团队协作，在紧迫时间内快速迭代游戏概念和机制，最终荣获第二名。" 
     },
-    tags: ["API", "Data Science", "Mobile"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["Game Jam", "Rapid Prototyping", "Teamwork"],
+    date: "2022"
   },
   {
     id: 14,
-    title: { en: "Autonomous Drone Assembly & Flight Project", zh: "投资组合管理工具" },
+    title: { en: "Autonomous Drone Assembly & Flight Project", zh: "自主无人机组装与飞行项目" },
     summary: { 
-      en: "Built a financial portfolio tracking and analysis tool with market data integration...", 
-      zh: "构建了一个具有市场数据集成的金融投资组合跟踪和分析工具..." 
+      en: "Independently researched, sourced, and assembled a functional drone from scratch, including basic autonomous flight programming.", 
+      zh: "高中期间独立研究并从零开始组装了一架功能齐全的无人机，并编写了基本的自主飞行程序。" 
     },
-    tags: ["FinTech", "Data Viz", "React"],
-    description: {
-      en: "Full project description here...",
-      zh: "完整项目描述..."
-    }
+    tags: ["Embedded", "Hardware", "Robotics"],
+    date: "High School"
   }
 ];
