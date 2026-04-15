@@ -1,7 +1,16 @@
 import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
   const { isDarkMode } = useTheme();
+  const { t } = useLanguage();
+
+  const content = {
+    monetNote: {
+      en: "This website features paintings by Claude Monet, my favorite Impressionist painter.",
+      zh: "该网站使用了克劳德·莫奈的照片，他是我最喜欢的印象派画家。"
+    }
+  };
   
   return (
   <footer className={`w-full border-t ${
@@ -56,6 +65,7 @@ const Footer = () => {
           <p>Theme on <a href="https://github.com/RICHELLysS/RICHELLysS.github.io" className={`hover:text-blue-800 ${
             isDarkMode ? 'text-blue-400' : 'text-blue-600'
           }`}>GitHub</a></p>
+          <p className="mt-2 italic opacity-80">{t(content.monetNote)}</p>
         </div>
       </div>
     </div>
